@@ -51,6 +51,11 @@
       noBtn.style.left = x + "px";          
       noBtn.style.top = y + "px";
     });
+    document.addEventListener("keydown",(e)=>{
+      if(e.key==="Tab"){
+        e.preventDefault();
+      }
+    });
 
     function yesClicked() {
       alert("Correct answer 😌✨");
